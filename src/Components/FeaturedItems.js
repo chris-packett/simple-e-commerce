@@ -5,6 +5,19 @@ class FeaturedItems extends Component {
     render() {
         return (
             <section className="featured-items">
+                {/* {
+                    Object.keys(data).map((objKey, i) => {
+                        for (let j = 0; j < 2; j++) {
+                            return (
+                                <section className="featured-item" key={i+j}>
+                                    <img src={data[objKey].collection[i].imageURL} alt={data[objKey].collection[i].name} />
+                                    <div>{data[objKey].collection[i].name}</div>
+                                    <div className="italic">{data[objKey].collection[i].price}</div>
+                                </section>
+                            )
+                        }
+                    })
+                } */}
                 <section className="featured-item">
                     <img src={data['watches'].collection[0].imageURL} alt={data['watches'].collection[0].name} />
                     <div>{data['watches'].collection[0].name}</div>
