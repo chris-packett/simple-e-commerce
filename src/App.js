@@ -5,6 +5,7 @@ import './App.css';
 
 import FeaturedItems from './Components/FeaturedItems'
 import CategoryItems from './Components/CategoryItems'
+import ItemDetail from './Components/ItemDetail'
 
 class App extends Component {
   render() {
@@ -44,7 +45,8 @@ class App extends Component {
             <section className="App-component">
               <Switch> 
                 <Route path="/" exact component={FeaturedItems} />
-                <Route path="/watches" exact component={CategoryItems} />
+                <Route path="/:category" exact component={CategoryItems} />
+                <Route path="/:category/:id" exact component={ItemDetail} />
               </Switch>
             </section>
           </section> 

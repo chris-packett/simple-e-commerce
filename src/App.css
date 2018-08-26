@@ -175,3 +175,14 @@
     font-style: italic;
 }
 
+.featured-items-header {
+    font-size: 26px;
+    color: #444444;
+    padding-left: 1.5em;
+}
+
+.featured-items-header-and-content {
+    border-top: 2px solid #d6d6d6;
+    padding: 1em;
+}
+
