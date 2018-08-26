@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import './App.css';
+
+import FeaturedItems from './Components/FeaturedItems'
 
 class App extends Component {
   render() {
@@ -28,15 +31,13 @@ class App extends Component {
           </section>
           <section className="App-nav-and-component-container">
             <ul className="App-nav">
-              <li>Home</li>
-              <li>Watches</li>
-              <li>Glasses</li>
+              <li><Link to="/">Home</Link></li>
+              <li><Link to="/watches">Watches</Link></li>
+              <li><Link to="/glasses">Glasses</Link></li>
               <ul className="App-nav-social">
-                <li>Fb</li>
-                <li>IG</li>
-                <li>Twit</li>
-                <li>G+</li>
-                <li>SC</li>
+                <li><img src="/Images/facebook.png" alt="fb-logo"/></li>
+                <li><img src="/Images/instagram.png" alt="ig-logo"/></li>
+                <li><img src="/Images/twitter.png" alt="twitter-logo"/></li>
               </ul>
             </ul>
             <section className="App-component">
@@ -46,7 +47,11 @@ class App extends Component {
             </section>
           </section> 
           <footer className="App-footer">
-            Bitcoin, Ethereum, and PayPal accepted.
+            <ul className="App-footer-payments">
+              <li><img src="/Images/bitcoin-logo.png" alt="bitcoin"/></li>
+              <li><img src="/Images/ethereum.png" alt="eth"/></li>
+              <li><img src="/Images/paypal-logo.png" alt="paypal"/></li>
+            </ul>
           </footer>
         </section>
       </Router>
