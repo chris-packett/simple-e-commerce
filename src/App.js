@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 import './App.css';
 
 import FeaturedItems from './Components/FeaturedItems'
+import CategoryItems from './Components/CategoryItems'
 
 class App extends Component {
   render() {
@@ -43,6 +44,7 @@ class App extends Component {
             <section className="App-component">
               <Switch> 
                 <Route path="/" exact component={FeaturedItems} />
+                <Route path="/watches" exact component={CategoryItems} />
               </Switch>
             </section>
           </section> 

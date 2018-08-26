@@ -1,28 +1,31 @@
 import React, { Component } from 'react';
+import data from '../data.json'
 
 class FeaturedItems extends Component {
     render() {
         return (
             <section className="featured-items">
                 <section className="featured-item">
-                    <img src="https://cdn.shopify.com/s/files/1/1709/7779/products/40mm_Remsen_TL14038_Grey_Metallic_Silver_Brown_Leather_Strap_Men_s_Watch_-1_365974ce-2a50-45e0-9183-edcc6314b3fa_800x800.jpg?v=1523269348" alt="resmen" />
-                    <div>Remsen - Brown Leather</div>
-                    <div className="italic">$90.95</div>
+                    <img src={data['watches'].collection[0].imageURL} alt="resmen" />
+                    <div>{data['watches'].collection[0].name}</div>
+                    <div className="italic">{data['watches'].collection[0].price}</div>
                 </section>                
                 <section className="featured-item">
-                    <img src="https://cdn.shopify.com/s/files/1/1709/7779/products/40mm_Remsen_TL14038_Grey_Metallic_Silver_Brown_Leather_Strap_Men_s_Watch_-1_365974ce-2a50-45e0-9183-edcc6314b3fa_800x800.jpg?v=1523269348" alt="resmen" />
-                    <div>Remsen - Brown Leather</div>
-                    <div className="italic">$90.95</div>
+                    <img src={data['glasses'].collection[0].imageURL} alt="burke" />
+                    <div>{data['glasses'].collection[0].name}</div>
+                    <div className="italic">{data['glasses'].collection[0].price}</div>
                 </section>
                 <section className="featured-item">
-                    <img src="https://cdn.shopify.com/s/files/1/1709/7779/products/40mm_Remsen_TL14038_Grey_Metallic_Silver_Brown_Leather_Strap_Men_s_Watch_-1_365974ce-2a50-45e0-9183-edcc6314b3fa_800x800.jpg?v=1523269348" alt="resmen" />
-                    <div>Remsen - Brown Leather</div>
-                    <div className="italic">$90.95</div>
+                    <img src={data['glasses'].collection[3].imageURL} alt="burke" />
+                    <section className="featured-item-info">
+                        <div>{data['glasses'].collection[3].name}</div>
+                        <div className="italic">{data['glasses'].collection[3].price}</div>
+                    </section>
                 </section>
                 <section className="featured-item">
-                    <img src="https://cdn.shopify.com/s/files/1/1709/7779/products/40mm_Remsen_TL14038_Grey_Metallic_Silver_Brown_Leather_Strap_Men_s_Watch_-1_365974ce-2a50-45e0-9183-edcc6314b3fa_800x800.jpg?v=1523269348" alt="resmen" />
-                    <div>Remsen - Brown Leather</div>
-                    <div className="italic">$90.95</div>
+                    <img src={data['watches'].collection[1].imageURL} alt="resmen" />
+                    <div>{data['watches'].collection[1].name}</div>
+                    <div className="italic">{data['watches'].collection[1].price}</div>
                 </section>
             </section>
         );

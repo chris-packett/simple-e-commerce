@@ -1,0 +1,52 @@
+{
+    "watches": {
+        "title": "Watches",
+        "collection": [
+            {
+                "name": "Remsen - Brown Leather",
+                "imageURL": "/Images/40mm-Remsen-Brown-Leather.jpg",
+                "price": "$90.00"
+            },
+            {
+                "name": "MVMT - White Black",
+                "imageURL": "/Images/MVMT-Black-Band.jpg",
+                "price": "$95.00"
+            },
+            {
+                "name": "MVMT - Black Silver",
+                "imageURL": "/Images/MVMT-Black-Silver-2.jpg",
+                "price": "$110.00"
+            },
+            {
+                "name": "MVMT - Black Tan",
+                "imageURL": "/Images/MVMT-Black-Tan.jpg",
+                "price": "$95.00"
+            }
+        ]
+    },
+    "glasses": {
+        "title": "Glasses",
+        "collection": [
+            {
+                "name": "Burke - Tennessee Whiskey",
+                "imageURL": "/Images/burke-tennessee-whiskey.jpg",
+                "price": "$95.00"
+            },
+            {
+                "name": "Moore - Whiskey Tortoise",
+                "imageURL": "/Images/Moore-Whiskey-Tortoise.jpg",
+                "price": "$95.00"
+            },
+            {
+                "name": "Hughes Wide - Smokey Quartz Crystal",
+                "imageURL": "/Images/Hughes-Wide-Smokey-Quartz-Crystal.jpg",
+                "price": "$95.00"
+            },
+            {
+                "name": "York - Polished Silver",
+                "imageURL": "/Images/York-Polished-Silver.jpg",
+                "price": "$145.00"
+            }
+        ]
+    }
+}
